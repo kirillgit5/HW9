@@ -15,6 +15,7 @@
 		EEAAA32F249940CB000CD8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEAAA32E249940CB000CD8AC /* Assets.xcassets */; };
 		EEAAA332249940CB000CD8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAAA330249940CB000CD8AC /* LaunchScreen.storyboard */; };
 		EEAAA33A249943BF000CD8AC /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAAA339249943BF000CD8AC /* DataFetcher.swift */; };
+		EEEBEEB9249A80CB00A9ACF2 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEBEEB8249A80CB00A9ACF2 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EEAAA331249940CB000CD8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEAAA333249940CB000CD8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEAAA339249943BF000CD8AC /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		EEEBEEB8249A80CB00A9ACF2 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				EEAAA325249940C7000CD8AC /* AppDelegate.swift */,
 				EEAAA327249940C7000CD8AC /* SceneDelegate.swift */,
 				EEAAA329249940C7000CD8AC /* ViewController.swift */,
+				EEEBEEB8249A80CB00A9ACF2 /* Animation.swift */,
 				EEAAA339249943BF000CD8AC /* DataFetcher.swift */,
 				EEAAA32B249940C7000CD8AC /* Main.storyboard */,
 				EEAAA32E249940CB000CD8AC /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 				EEAAA32A249940C7000CD8AC /* ViewController.swift in Sources */,
 				EEAAA326249940C7000CD8AC /* AppDelegate.swift in Sources */,
 				EEAAA328249940C7000CD8AC /* SceneDelegate.swift in Sources */,
+				EEEBEEB9249A80CB00A9ACF2 /* Animation.swift in Sources */,
 				EEAAA33A249943BF000CD8AC /* DataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

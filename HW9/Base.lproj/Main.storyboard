@@ -92,14 +92,29 @@
                                     <constraint firstItem="0YR-Ay-57n" firstAttribute="leading" secondItem="ekR-9I-iDc" secondAttribute="trailing" constant="2" id="l4y-iw-OYs"/>
                                     <constraint firstAttribute="bottom" secondItem="ekR-9I-iDc" secondAttribute="bottom" constant="4" id="uKE-FC-0qc"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gye-Io-PfO">
                                 <rect key="frame" x="69" y="409" width="182" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4vh-W9-VHe"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="vJT-g8-lYO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="startAnimation" destination="BYZ-38-t0r" eventType="touchUpInside" id="J0f-mv-CCb"/>
                                 </connections>

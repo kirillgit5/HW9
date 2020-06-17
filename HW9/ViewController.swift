@@ -21,27 +21,30 @@ class ViewController: UIViewController {
     @IBOutlet var startAnimationButton: UIButton!
     
     //MARK : - Private Property
-    private var currentAnimation = DataFetcher.shared.getAnimationConfigure()
+    private var currentAnimation = Animation.getAnimation()
     
     //MARK : - Life Cycles View Controller
     override func viewDidLoad() {
         super.viewDidLoad()
-        startAnimationButton.setTitle(currentAnimation.animationPreset, for: .normal)
+        guard let currentAnimation = currentAnimation else { return }
+        startAnimationButton.setTitle(currentAnimation.animation, for: .normal)
         setValueLabes()
     }
     
     //MARK : - IB Action
     @IBAction func startAnimation() {
+        guard let animation = currentAnimation else { return }
         startAnimationButton.isEnabled = false
-        animationView.animation = currentAnimation.animationPreset
-        animationView.curve = currentAnimation.animationCurve
-        animationView.force = currentAnimation.force
-        animationView.duration = currentAnimation.duration
+        animationView.animation = animation.animation
+        animationView.curve = animation.curve
+        animationView.force = animation.force
+        animationView.duration = animation.duration
         animationView.animateNext { [weak self] in
             guard let self = self else { return }
-            self.currentAnimation = DataFetcher.shared.getAnimationConfigure()
+            self.currentAnimation = Animation.getAnimation()
+            guard let currentAnimation = self.currentAnimation else { return }
             self.setValueLabes()
-            self.startAnimationButton.setTitle(self.currentAnimation.animationPreset, for: .normal)
+            self.startAnimationButton.setTitle(currentAnimation.animation , for: .normal)
             self.startAnimationButton.isEnabled = true
             
         }
@@ -49,8 +52,9 @@ class ViewController: UIViewController {
     
     //MARK : - Private Methods
     private func setValueLabes() {
-        nameLabel.text = currentAnimation.animationPreset
-        curveLabel.text = currentAnimation.animationCurve
+        guard let currentAnimation = currentAnimation else { return }
+        nameLabel.text = currentAnimation.animation
+        curveLabel.text = currentAnimation.curve
         forceLabel.text = string(value: currentAnimation.force)
         durationLabel.text = string(value: currentAnimation.duration)
     }
